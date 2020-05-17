@@ -11,9 +11,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    container:
-      image:  isorensen/flutter-ubuntu:1.17.0.dev.3.1-beta_minimal
-
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-java@v1

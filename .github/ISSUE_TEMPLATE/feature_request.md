@@ -7,14 +7,20 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+# Summary
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+// Replace with description of the issue, in your own words
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Relevant logs and/or screenshots
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+// Paste any relevant logs - please use code blocks (```) to format console output, logs, and code
+
+## Possible implementation
+
+// If you can, add suggestions on how it might be implemented
+
+## Minimum TODO list
+
+- [ ] Add unit tests
+- [ ] Leave campground better than found (refactor)
+- [ ] Update CHANGELOG.md after completion

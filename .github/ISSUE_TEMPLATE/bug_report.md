@@ -7,21 +7,32 @@ assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+# Summary
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+// Replace with summary of the bug encountered concisely
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Steps to reproduce
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+// Replace with how one can reproduce the issue
 
-**Additional context**
-Add any other context about the problem here.
+## What is the current bug behavior
+
+// Replace with what actually happens
+
+## What is the expected correct behavior
+
+// Replace with what you should see instead
+
+## Relevant logs and/or screenshots
+
+// Paste any relevant logs - please use code blocks (```) to format console output, logs, and code
+
+## Possible fixes
+
+// If you can, link to the line of code that might be responsible for the problem
+
+## Minimum TODO list
+
+- [ ] Add unit tests
+- [ ] Leave campground better than found (refactor)
+- [ ] Update CHANGELOG.md after completion

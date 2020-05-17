@@ -1,4 +1,4 @@
-name: Flutter CI (Test)
+name: Flutter CI
 
 on:
   push:
@@ -10,9 +10,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    container:
-      image:  isorensen/flutter-ubuntu:1.17.0.dev.3.1-beta_minimal
 
     steps:
     - uses: actions/checkout@v2
@@ -27,8 +24,8 @@ jobs:
       run: flutter pub get
     - name: Run tests
       run: flutter test --coverage
-    - name: Generate coverage html
-      run: genhtml coverage/lcov.info --output=coverage
+    - name: Codecov
+      uses: codecov/codecov-action@v1.0.7
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:

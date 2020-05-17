@@ -1,0 +1,36 @@
+name: Flutter CI (Test)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image:  isorensen/flutter-ubuntu:1.17.0.dev.3.1-beta_minimal
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-java@v1
+      with:
+        java-version: '12.x'
+    - name: Flutter action
+      uses: subosito/flutter-action@v1
+      with:
+        flutter-version: '1.17.0'
+    - name: Install dependencies
+      run: flutter pub get
+    - name: Run tests
+      run: flutter test --coverage
+    - name: Generate coverage html
+      run: genhtml coverage/lcov.info --output=coverage
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Flutter Test Coverage
+        path: coverage/

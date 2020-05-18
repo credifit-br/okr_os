@@ -1,8 +1,9 @@
 # OKR OS - an open source OKR management system
 
-[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
 ![Flutter CI](https://github.com/credifit-br/okr_os/workflows/Flutter%20CI/badge.svg)
 [![codecov](https://codecov.io/gh/credifit-br/okr_os/branch/master/graph/badge.svg)](https://codecov.io/gh/credifit-br/okr_os)
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## About OKR OS
 

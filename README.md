@@ -24,7 +24,7 @@ OKRs comprise an objective — a clearly defined goal — and one or more key re
 
 This project is being developed using:
 
-- Toolkit: [Flutter-web](https://flutter.dev/web)
+- Toolkit: [Flutter (focus on web/desktop)](https://flutter.dev/web)
 - Project Structure: [Modular](https://pub.dev/packages/flutter_modular)
 - Package manager and template generator: [Slidy](https://pub.dev/packages/slidy)
 

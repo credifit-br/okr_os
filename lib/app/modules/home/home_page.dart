@@ -16,20 +16,41 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          key: Key('menu'),
+          children: [
+            DrawerHeader(child: Text('Menu')),
+            ListTile(
+              title: Text('Page 1'),
+              onTap: () {
+                print('Page 1 tapped');
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+              title: Text('Page 2'),
+              onTap: () {
+                print('Page 2 tapped');
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+              title: Text('Page 3'),
+              onTap: () {
+                print('Page 3 tapped');
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          TextField(
-            decoration: InputDecoration(labelText: 'Some text'),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {},
+        children: <Widget>[],
       ),
     );
   }

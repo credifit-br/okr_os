@@ -5,3 +5,4 @@ linter:
     public_member_api_docs: false
     type_annotate_public_apis: false
     unnecessary_brace_in_string_interps: false
+    lines_longer_than_80_chars: false

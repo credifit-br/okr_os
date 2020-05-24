@@ -6,9 +6,10 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: Modular.navigatorKey,
-      title: 'Flutter Slidy',
+      debugShowCheckedModeBanner: false,
+      title: 'OKR OS',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
       initialRoute: '/',
       onGenerateRoute: Modular.generateRoute,

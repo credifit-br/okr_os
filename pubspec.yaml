@@ -8,6 +8,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  flare_flutter: ^2.0.3
   dio: ^3.0.9
   flutter_mobx: ^1.1.0
   mobx: ^1.2.1
@@ -26,3 +27,9 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # 1.0x = mdpi, 2.0x = xhdpi, 3.0x = xxhdpi, 4.0x = xxxhdpi
+  assets:
+    - assets/loading_4dots.flr
+    - assets/loading_credifit.flr

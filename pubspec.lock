@@ -201,7 +201,7 @@ packages:
       name: flutter_modular
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.1"
+    version: "1.2.4"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -297,7 +297,7 @@ packages:
       name: mobx
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.0"
+    version: "1.2.1"
   mobx_codegen:
     dependency: "direct dev"
     description:

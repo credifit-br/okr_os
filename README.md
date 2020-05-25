@@ -37,6 +37,11 @@ Use port 65123 to debug, since Firebase Auth is set to localhost:65123
 
 Since Google Sign In cannot be done in a browser running on debug mode, you need to open a new instance of Chrome and access `localhost:65123` to test it.
 
+### Login with Email and Password
+
+- Username: test@test.com.br
+- Password: test123
+
 ## How to contribute
 
 We wish to make this tool useful to ourselves! Therefore, the main idea behind contributing is getting things done to be used right away.

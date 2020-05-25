@@ -29,6 +29,14 @@ This project is being developed using:
 - Project Structure: [Modular](https://pub.dev/packages/flutter_modular)
 - Package manager and template generator: [Slidy](https://pub.dev/packages/slidy)
 
+## Debug
+
+Use port 65123 to debug, since Firebase Auth is set to localhost:65123
+
+`flutter run -d chrome --web-port 65123`
+
+Since Google Sign In cannot be done in a browser running on debug mode, you need to open a new instance of Chrome and access `localhost:65123` to test it.
+
 ## How to contribute
 
 We wish to make this tool useful to ourselves! Therefore, the main idea behind contributing is getting things done to be used right away.

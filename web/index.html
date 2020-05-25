@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="'A new Flutter project. Created by Slidy'">
+  <meta name="google-signin-client_id" content="460874037505-h7mh4ols1p3uckqjrljqpb079dghf88r.apps.googleusercontent.com">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,6 +19,28 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDGqhG0yvYRa-gEML8jQViYZAthGFSf7BQ",
+      authDomain: "okr-os.firebaseapp.com",
+      databaseURL: "https://okr-os.firebaseio.com",
+      projectId: "okr-os",
+      storageBucket: "okr-os.appspot.com",
+      messagingSenderId: "463670144969",
+      appId: "1:463670144969:web:0f2eb1fd103b056cf0c218"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->

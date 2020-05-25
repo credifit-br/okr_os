@@ -108,6 +108,17 @@ mixin _$AuthController on _AuthControllerBase, Store {
   }
 
   @override
+  Future<dynamic> logout() {
+    final _$actionInfo = _$_AuthControllerBaseActionController.startAction(
+        name: '_AuthControllerBase.logout');
+    try {
+      return super.logout();
+    } finally {
+      _$_AuthControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 user: ${user},

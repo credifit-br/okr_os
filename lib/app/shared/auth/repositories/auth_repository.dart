@@ -51,6 +51,11 @@ class AuthRepository extends Disposable implements IAuthRepository {
 
   @override
   Future<FirebaseUser> getUser() {
-    return FirebaseAuth.instance.currentUser();
+    return _auth.currentUser();
+  }
+
+  @override
+  Future getLogout() {
+    return _auth.signOut();
   }
 }

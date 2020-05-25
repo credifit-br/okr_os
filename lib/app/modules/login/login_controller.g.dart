@@ -24,6 +24,38 @@ mixin _$LoginController on _LoginControllerBase, Store {
     });
   }
 
+  final _$emailControllerAtom =
+      Atom(name: '_LoginControllerBase.emailController');
+
+  @override
+  TextEditingController get emailController {
+    _$emailControllerAtom.reportRead();
+    return super.emailController;
+  }
+
+  @override
+  set emailController(TextEditingController value) {
+    _$emailControllerAtom.reportWrite(value, super.emailController, () {
+      super.emailController = value;
+    });
+  }
+
+  final _$passwordControllerAtom =
+      Atom(name: '_LoginControllerBase.passwordController');
+
+  @override
+  TextEditingController get passwordController {
+    _$passwordControllerAtom.reportRead();
+    return super.passwordController;
+  }
+
+  @override
+  set passwordController(TextEditingController value) {
+    _$passwordControllerAtom.reportWrite(value, super.passwordController, () {
+      super.passwordController = value;
+    });
+  }
+
   final _$loginWithGoogleAsyncAction =
       AsyncAction('_LoginControllerBase.loginWithGoogle');
 
@@ -41,10 +73,37 @@ mixin _$LoginController on _LoginControllerBase, Store {
         .run(() => super.loginWithEmailPassword());
   }
 
+  final _$_LoginControllerBaseActionController =
+      ActionController(name: '_LoginControllerBase');
+
+  @override
+  void setEmail(String email) {
+    final _$actionInfo = _$_LoginControllerBaseActionController.startAction(
+        name: '_LoginControllerBase.setEmail');
+    try {
+      return super.setEmail(email);
+    } finally {
+      _$_LoginControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void setPassword(String password) {
+    final _$actionInfo = _$_LoginControllerBaseActionController.startAction(
+        name: '_LoginControllerBase.setPassword');
+    try {
+      return super.setPassword(password);
+    } finally {
+      _$_LoginControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
   @override
   String toString() {
     return '''
-loading: ${loading}
+loading: ${loading},
+emailController: ${emailController},
+passwordController: ${passwordController}
     ''';
   }
 }

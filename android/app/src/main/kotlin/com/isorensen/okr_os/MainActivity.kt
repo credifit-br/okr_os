@@ -1,4 +1,4 @@
-package com.example.okr_os
+package com.isorensen.okr_os
 
 import io.flutter.embedding.android.FlutterActivity
 

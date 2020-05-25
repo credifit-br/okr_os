@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
 
@@ -12,6 +13,18 @@ abstract class _LoginControllerBase with Store {
 
   @observable
   bool loading = false;
+
+  @observable
+  TextEditingController emailController;
+
+  @observable
+  TextEditingController passwordController;
+
+  @action
+  void setEmail(String email) => auth.setEmail(email);
+
+  @action
+  void setPassword(String password) => auth.setPassword(password);
 
   @action
   Future loginWithGoogle() async {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'login_controller.dart';
 
@@ -11,8 +12,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends ModularState<LoginPage, LoginController> {
-  //use 'controller' variable to access controller
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,10 +20,23 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
       ),
       body: Column(
         children: <Widget>[
-          // RaisedButton(
-          //   onPressed: controller.loginWithGoogle,
-          //   child: Text('Login with Email and Password'),
-          // ),
+          TextFormField(
+            key: Key('emailTextForm'),
+            controller: controller.emailController,
+            decoration: InputDecoration(hintText: 'email'),
+            onChanged: controller.setEmail,
+          ),
+          TextFormField(
+            key: Key('passwordTextForm'),
+            controller: controller.emailController,
+            decoration: InputDecoration(hintText: 'password'),
+            onChanged: controller.setPassword,
+            obscureText: true,
+          ),
+          RaisedButton(
+            onPressed: controller.loginWithEmailPassword,
+            child: Text('Login with Email and Password'),
+          ),
           RaisedButton(
             onPressed: controller.loginWithGoogle,
             child: Text('Login with Google'),
